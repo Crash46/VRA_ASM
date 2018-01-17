@@ -20,3 +20,5 @@ devices["LIGHT_SYSTEM"]				= counter()--12
 devices["FUEL_SYSTEM"]				= counter()--13
 devices["GYRO_SYSTEM"]				= counter()--14
 devices["START_PANEL"]				= counter()--15
+devices["SMOKES"]                   = counter()--16
+devices["COMMAND_SMOKES"]           = counter()--17

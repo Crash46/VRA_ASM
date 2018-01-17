@@ -20,7 +20,7 @@ cockpit_local_point = {3.925,	0.936,	0}  -- position cockpit
 day_texture_set_value   = 0.0
 night_texture_set_value = 0.1
 
-controllers = LoRegisterPanelControls()
+local controllers = LoRegisterPanelControls()
 
 mirrors_data = 
 {
@@ -47,6 +47,8 @@ CockpitCanopy.input			= {0.0, 1.0}
 CockpitCanopy.output		= {0.0, 1.0}
 --CockpitCanopy.controller	= controllers.base_gauge_CanopyState
 CockpitCanopy.controller	= controllers.CockpitCanopy
+
+
 
 StickPitch							= CreateGauge()
 StickPitch.arg_number				= 2
@@ -83,6 +85,23 @@ Landinggearhandle.arg_number		= 8
 Landinggearhandle.input				= {0, 1}
 Landinggearhandle.output			= {0, 1}
 Landinggearhandle.controller		= controllers.gear_handle_animation
+
+
+---------------------------------------------------------------
+-- SMOKE SYSTEM
+---------------------------------------------------------------
+
+White_On_Off 					    = CreateGauge("parameter")
+White_On_Off.arg_number		        = 703			
+White_On_Off.input			        = { 0.0, 1.0}
+White_On_Off.output			        = { 0.0, 1.0}
+White_On_Off.parameter_name	        = "White_On_Off"
+
+Color_On_Off 					    = CreateGauge("parameter")
+Color_On_Off.arg_number		        = 704			
+Color_On_Off.input			        = { 0.0, 1.0}
+Color_On_Off.output			        = { 0.0, 1.0}
+Color_On_Off.parameter_name	        = "Color_On_Off"
 
 ---------------------------------------------------------------
 -- ENGINE
